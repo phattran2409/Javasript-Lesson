@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    * { 
+        
+        box-sizing: border-box;
+    }
+    body { 
+        margin: 0;
+        padding: 3rem;
+        width: 100%;
+        height: 100vh;
+        
+        border: 1px solid red;
+    }
+    .content { 
+        border:  5px solid #292626ae;
+        background: #ffffff;
+        width: 100vh;
+        height: fit-content;
+        font-family: "Poppins";
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* display: none; */
+        overflow: hidden;
+        
+    }
+
+    .content > .detail { 
+        width:100%;
+        height: 100%;
+        padding: 10px;
+    }
+    img { 
+        width: 200px ;
+        height: 200px;
+        mix-blend-mode: multiply;
+        filter: contrast(1);
+        transform: scale(1);
+        transition: all .5s ease-in-out;
+
+    }
+    img:hover  { 
+        transform: scale(1.5);
+    }
+    
+
+    </style>
+</head>
+<body>
+    <label for="weather">select the weather like today</label>
+    <select name="" id="weather">
+        <option value="">--make a choice--</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Rainy</option>
+        <option value="snowing">Snowing</option>
+        <option value="overcast">Overcast</option>
+    </select>
+    <p></p>
+    <!-- vehicle -->
+    <label for="vehicle-name">select the vehicle brand</label>
+    <select name="" id="vehicle-name" onchange="">
+        <option value="">--make a choice a brand vehicle--</option>
+        <option value="bmw" >BMW</option>
+        <option value="audi">Audi</option>
+        <option value="nissan">Nissan</option>
+        <option value="toyota">Toyota</option>
+    </select>
+    <div id="result-Nselect">
+
+    </div>
+    <p id="para"></p>
+<script src="main.js">
+
+</script>
+</body>
+</html>
